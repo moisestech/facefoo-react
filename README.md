@@ -1,7 +1,7 @@
 # facefoo-react
 Facefoo - Social Media Posting application
 
-[Facefoo Logo](https://github.com/moisestech/musify-react/blob/master/public/Facefoo_logo.png.png)
+![Facefoo Logo](https://github.com/moisestech/facefoo-react/blob/master/public/Facefoo_logo.png)
 
 ## App Root
 ``` bash
@@ -45,7 +45,7 @@ Facefoo - Social Media Posting application
 - Flexbox
 - Firebase’s Firestore Realtime DB
 - Firebase Hosting
-- Firebase Google Authentication (Full Login!)
+- Firebase Google Authentication (Will change to Auth0)
 - React Flip move
 
 
