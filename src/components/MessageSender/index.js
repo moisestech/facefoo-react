@@ -1,5 +1,9 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
+import {
+  VideocamIcon,
+  PhotoLibraryIcon,
+  InsertEmotionIcon } from '@material-ui/core'
 
 function MessageSenderTop () {
   const handleSubmit = (event) => {
