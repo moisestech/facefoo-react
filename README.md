@@ -16,9 +16,11 @@ Facefoo - Social Media Posting application
 │   │   │   └── index.js
 │   │   ├── Header
 │   │   │   └── index.js
-│   │   ├── MessageCenter
+│   │   ├── MessageSender
 │   │   │   └── index.js
 │   │   ├── Post
+│   │   │   ├── PostOptions
+│   │   │   │   └── index.js
 │   │   │   └── index.js
 │   │   ├── Sidebar
 │   │   │   └── index.js
@@ -26,7 +28,7 @@ Facefoo - Social Media Posting application
 │   │   │   └── index.js
 │   │   ├── StoryReel
 │   │   │   └── index.js
-│   │   └── Widget
+│   │   └── Widgets
 │   │       └── index.js
 │   ├── contexts
 │   ├── hooks
