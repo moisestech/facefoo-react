@@ -6,7 +6,7 @@ Facefoo - Social Media Posting application
 ## App Root
 ``` bash
 ├── README.md
-├── package-lock.json
+├── package.json
 ├── public
 │   ├── Facefoo_logo.png
 │   └── _redirects
@@ -36,7 +36,6 @@ Facefoo - Social Media Posting application
 │   └── utils
 └── webpack.config.js
 ```
-
 
 **Features**
 - React + React Hooks
