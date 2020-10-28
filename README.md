@@ -1,10 +1,35 @@
-# facefoo-react
-Facefoo - Social Media Posting application
+# FaceFoo
 
-![Facefoo Logo](https://github.com/moisestech/facefoo-react/blob/master/public/Facefoo_logo.png)
+<img src="https://github.com/moisestech/facefoo-react/blob/master/public/facefoo_logo.png" width="150px" />
 
-## App Root
-``` bash
+## Social Media Posting application
+
+## 👁️‍🗨️ Project Preview
+
+Coming Soon!
+
+## Features\*\*
+
+- React + React Hooks
+- React Context APU -> Redux Pattern
+- Material UI
+- Flexbox
+- Firebase’s Firestore Realtime DB
+- Firebase Hosting
+- Firebase Google Authentication (Will change to Auth0)
+- React Flip move
+
+## 🗺 URL Tree
+
+```bash
+├── /                   #Home
+├── /search             #Search
+└── /*                  #404
+```
+
+## 🌿 App Root
+
+```bash
 ├── README.md
 ├── package.json
 ├── public
@@ -39,14 +64,10 @@ Facefoo - Social Media Posting application
 └── webpack.config.js
 ```
 
-**Features**
-- React + React Hooks
-- React Context APU -> Redux Pattern
-- Material UI
-- Flexbox
-- Firebase’s Firestore Realtime DB
-- Firebase Hosting
-- Firebase Google Authentication (Will change to Auth0)
-- React Flip move
+## ⛰️ Roadmap
 
+- Mobile
 
+## 📝 Todos
+
+- Implement Firebase
