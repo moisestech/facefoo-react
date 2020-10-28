@@ -1,6 +1,6 @@
 # FaceFoo
 
-<img src="https://github.com/moisestech/facefoo-react/blob/master/public/facefoo_logo.png" width="150px" />
+<img src="https://raw.githubusercontent.com/moisestech/facefoo-react/master/public/Facefoo_logo.png" width="150px" />
 
 ## Social Media Posting application
 
@@ -8,7 +8,7 @@
 
 Coming Soon!
 
-## Features\*\*
+## Features
 
 - React + React Hooks
 - React Context APU -> Redux Pattern
