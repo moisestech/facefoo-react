@@ -10,7 +10,12 @@
   "babel": {
     "presets": [
       "@babel/preset-env",
-      "@babel/preset-react"
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
     ],
     "plugins": [
       "@babel/plugin-proposal-class-properties",
@@ -29,9 +34,12 @@
   },
   "homepage": "https://github.com/moisestech/facefoo-react#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "firebase": "^8.0.0",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0"
   },
@@ -39,7 +47,6 @@
     "@babel/core": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.1.0",
     "css-loader": "^4.2.2",
