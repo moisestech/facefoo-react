@@ -1,21 +1,39 @@
-import * as React from 'react'
-import propTypes from 'prop-types'
-import Post from './Post'
-import MessageSender from './MessageSender'
-import StoryReel from 'StoryReel'
+import "./feed.css";
+import { useEffect, useState } from "react";
 
-export default function Feed () {
+// COMPONENTS
+import Post from "./components/Post";
+import MessageSender from "./components/MessageSender";
+import StoryReel from "./components/StoryReel";
+import db from "../../state/firebase";
+
+export default function Feed() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    db.collection("post")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) => {
+        setPosts(
+          snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() }))
+        );
+      });
+  }, []);
 
   return (
-    <div className='feed'>
-      <div>Feed</div>
+    <div className="feed">
       <StoryReel />
       <MessageSender />
-      <Post />
+      {posts.map((post) => (
+        <Post
+          key={post.data.id}
+          profilePic={post.data.profilePic}
+          message={post.data.message}
+          timestamp={post.data.timestamp}
+          username={post.data.username}
+          image={post.data.image}
+        />
+      ))}
     </div>
-  )
-}
-
-Feed.propTypes = {
-
+  );
 }
