@@ -1,5 +1,3 @@
-import "./index.css";
-
 // ROUTER
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -9,20 +7,17 @@ import Sidebar from "../../components/Sidebar";
 import Feed from "../../components/Feed";
 import Widgets from "../../components/Widgets";
 
-// PAGES
-import Home from "../Home";
-
-// Component
-// State
-// Lifecycle
-// UI
-
 // Your UI is a function of your state
 
-export default function App() {
+export default function Home() {
   return (
-    <div className="app">
-      <Home />
+    <div className="home">
+      <Header />
+      <div className="app-body">
+        <Sidebar />
+        <Feed />
+        <Widgets />
+      </div>
     </div>
   );
 }
