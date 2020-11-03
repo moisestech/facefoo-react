@@ -15,7 +15,7 @@ export default function SidebarRow({ src, Icon, title }) {
 }
 
 SidebarRow.propTypes = {
-  src: PropTypes.string.isRequired,
-  Icon: PropTypes.elementType.isRequired,
+  src: PropTypes.string,
+  Icon: PropTypes.elementType,
   title: PropTypes.string.isRequired,
 };
