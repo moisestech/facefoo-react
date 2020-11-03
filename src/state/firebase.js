@@ -1,6 +1,7 @@
-import firebase, { firestore } from "firebase";
+import firebase from "firebase";
+import "firebase/firestore";
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCiTExV0-2SKc-3161NCOem3bA62xjkAns",
   authDomain: "fb-clone-963d8.firebaseapp.com",
