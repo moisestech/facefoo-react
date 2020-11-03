@@ -14,9 +14,9 @@ import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 // REDUX
-import { useStateValue } from "../../state/StateProvider";
+// import { useStateValue } from "../../state/StateProvider";
 export default function Header() {
-  const [{ user }, dispatch] = useStateValue();
+  // const [{ user }, dispatch] = useStateValue();
 
   return (
     <div className="header">
@@ -44,7 +44,7 @@ export default function Header() {
           </div>
 
           <div className="header-option">
-            <StorefrontOutlinedIcon font-Size="large" />
+            <StorefrontOutlinedIcon fontSize="large" />
           </div>
 
           <div className="header-option">
@@ -54,8 +54,8 @@ export default function Header() {
 
         <div className="header-right">
           <div className="header-info">
-            <Avatar src={user.photoURL} />
-            <h4>{user.displayName}</h4>
+            {/* <Avatar src={user.photoURL} />
+            <h4>{user.displayName}</h4> */}
           </div>
 
           <IconButton>
