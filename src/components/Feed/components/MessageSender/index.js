@@ -1,6 +1,7 @@
 import "./message-sender.css";
 
 // ICON
+import { Avatar } from "@material-ui/core";
 import VideocamIcon from "@material-ui/icons/Videocam";
 import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
@@ -37,7 +38,7 @@ function MessageSenderBottom() {
   return (
     <div className="message-sender-bottom">
       <div className="message-sender-option">
-        <VideocamIcon style={{ color: red }} />
+        <VideocamIcon style={{ color: "red" }} />
         <h3>Live Video</h3>
       </div>
       <div className="message-sender-option">
@@ -45,7 +46,7 @@ function MessageSenderBottom() {
         <h3>Photo Video</h3>
       </div>
       <div className="message-sender-option">
-        <InsertEmotionIcon style={{ color: "orange" }} />
+        <InsertEmoticonIcon style={{ color: "orange" }} />
         <h3>Feeling / Activity</h3>
       </div>
     </div>
