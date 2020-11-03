@@ -7,25 +7,25 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // PAGE
 import Home from "./Pages/Home";
+import Login from "./pages/Login";
 import NotFound from "./Pages/NotFound";
 
-// COMPONENTS
-import Login from "./components/Login";
-
 // STATE
-import { useStateValue } from "./state/StateProvider";
+// import { useStateValue } from "./state/StateProvider";
 
 // Component
 // State
 // Lifecycle
 // UI
 
+// <Route path="/">{!user ? <Login /> : <Home />}</Route>
+
 function App() {
-  const [{ user }, dispatch] = useStateValue();
+  // const [{ user }, dispatch] = useStateValue();
 
   return (
     <Switch>
-      <Route path="/">{!user ? <Login /> : <Home />}</Route>
+      <Home />
       <Route path="*">
         <NotFound />
       </Route>
