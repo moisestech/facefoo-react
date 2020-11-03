@@ -16,5 +16,5 @@ export default function Story({ image, profileSrc, title }) {
 Story.propTypes = {
   image: PropTypes.string.isRequired,
   profileSrc: PropTypes.string.isRequired,
-  title: PropTypes.title.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
